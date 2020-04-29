@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
         var quality = file_iterator.next()
 
         if (args.contains("--headcrop")) {
-            var headcrop_res =  headcrop(fastq_seq, quality, 54)
+            var headcrop_res =  headcrop(fastq_seq, quality, args[2].toInt())
             fastq_seq = headcrop_res.first
             quality = headcrop_res.second
 
@@ -38,7 +38,7 @@ fun main(args: Array<String>) {
         }
 
         if (args.contains("--tailcrop")) {
-            var tailcrop_res =  tailcrop(fastq_seq, quality, 54)
+            var tailcrop_res =  tailcrop(fastq_seq, quality, args[2].toInt())
             fastq_seq = tailcrop_res.first
             quality = tailcrop_res.second
 

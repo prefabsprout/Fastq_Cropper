@@ -9,7 +9,8 @@ This directory contains tool for cropping length of FASTQ reads.
 
 ## Usage
 
-To use Fastq Cropper you need to specify path to your input FASTQ data and to your result FASTQ file. After that use one of the flags from functionality section.  
+To use Fastq Cropper you need to specify path to your input FASTQ data,to your result FASTQ file and number of bases you wish to crop. After that use one of the flags from functionality section.  
+<strong>NB! Order of arguments is important.</strong>
 
 Example:  
 ``` kotlin ./Fastq_Cropper.kts ~/FASTQ_samples/SRR1705860.fastq ~/FASTQ_samples/SRR1705860_result.fastq -- --headcrop ```
