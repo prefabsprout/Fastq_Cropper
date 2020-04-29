@@ -13,7 +13,7 @@ To use Fastq Cropper you need to specify path to your input FASTQ data,to your r
 <strong>NB! Order of arguments is important.</strong>
 
 Example:  
-``` kotlin ./Fastq_Cropper.kts ~/FASTQ_samples/SRR1705860.fastq ~/FASTQ_samples/SRR1705860_result.fastq -- --headcrop ```
+``` kotlin ./Fastq_Cropper.kts ~/FASTQ_samples/SRR1705860.fastq ~/FASTQ_samples/SRR1705860_result.fastq 54 -- --headcrop ```
 
 ## Recommended system requirements
 - Unix based operational system
